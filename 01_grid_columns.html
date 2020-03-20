@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Columns</title>
+    <style>
+      .grid {
+        display: grid;
+        /* grid-template-columns: 200px auto 200px; */
+        /* grid-template-columns: auto auto auto; */
+        /* grid-template-columns: repeat(3, auto); */
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-gap: 1rem;
+      }
+      .item {
+        padding: 3rem;
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        text-align: center;
+        font-size: 1.3;
+        font-weight: bold;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+    <main>
+      <section>
+        <h1>Welcome To My Website</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam,
+          expedita aspernatur necessitatibus eaque quaerat sint recusandae saepe
+          reprehenderit voluptatem ex harum possimus. Deleniti iste magnam
+          recusandae excepturi, dolorem nobis.
+        </p>
+      </section>
+      <aside>
+        <h3>Hello</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic eveniet
+          fuga labore beatae eos ut. Eveniet atque cum fuga provident.
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>
